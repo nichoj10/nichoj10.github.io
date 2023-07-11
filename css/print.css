@@ -1,0 +1,118 @@
+@media print {
+    @page {
+        margin: 1in 1.5in 1in 1.5in;
+    }
+
+    header, footer, .tags {
+        display: none !important;
+    }
+
+    body {
+        color: black;
+        background: white;
+        font-size: 12pt;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    main a:visited {
+        /* Override */
+        color: DarkSlateBlue;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .print-only {
+        display: inherit;
+    }
+
+    main article {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    article:after {
+        display: none;
+        visibility: hidden;
+    }
+
+    .date, .url {
+        text-align: center;
+        color: DimGray;
+        font-size: 0.75em;
+    }
+
+    .date {
+        margin: -1em 0 0 0;
+    }
+
+    h2 {
+        font-weight: bold;
+        page-break-after: avoid;
+    }
+
+    h3 {
+        font-weight: bold;
+        page-break-after: avoid;
+    }
+
+    h4 {
+        font-weight: bold;
+        page-break-after: avoid;
+    }
+
+    h5 {
+        font-weight: bold;
+        page-break-after: avoid;
+    }
+
+    h6 {
+        font-weight: bold;
+        page-break-after: avoid;
+    }
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    .highlight {
+        page-break-inside: avoid;
+    }
+
+    p a, li a {
+        color: navy;
+        text-decoration: none;
+    }
+
+    main article p a,
+    main article ol a,
+    main article li a {
+        text-decoration: none;
+    }
+
+    main article p, main article pre {
+        line-height: 1.35;
+    }
+
+    main article code, main article pre {
+        border: 0;
+        background-color: white;
+    }
+
+    sup.cite {
+        display: inline;
+        font-size: 75%;
+        color: DarkGray;
+    }
+
+    article .references {
+        font-size: 75%;
+        color: DarkGray;
+    }
+}

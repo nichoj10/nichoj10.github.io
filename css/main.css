@@ -1,0 +1,514 @@
+@font-face {
+  font-family: 'foundation-icons';
+  src: url('foundation-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.print-only {
+    display: none;
+}
+
+body {
+    color: Black;
+    background-color: White;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: DarkSlateBlue;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid BlanchedAlmond;
+    box-shadow: 0 0 10px DarkGray;
+    background-color: Beige;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header > div.container {
+    position: relative;
+    margin: 0.5rem auto;
+    padding: 0;
+    height: 4rem;
+    max-width: 700px;
+}
+
+header div.portrait {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    background-image: url(/img/avatar.jpg);
+    background-size: 100% 100%;
+}
+
+header .container > h1,
+header .container > h2,
+header .container > address {
+    line-height: 1;
+    padding: 0;
+    position: static;
+    display: block;
+    margin-left: 4.6rem;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    font-family: sans-serif;
+}
+
+header .container h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0.1rem;
+}
+
+header h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header address div {
+    line-height: 1.2;
+}
+
+header address {
+    font-size: 11px;
+}
+
+header nav {
+    box-sizing: border-box;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    width: 22rem;
+    line-height: 1;
+    text-align: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    height: 1.5rem;
+    width: 5rem;
+    text-align: left;
+}
+
+header nav .nav:before {
+    display: inline-block;
+    width: 1em;
+}
+
+header nav .index:before {
+    font-family: 'foundation-icons';
+    content: '\f169';
+}
+
+header nav .tags:before {
+    font-family: 'foundation-icons';
+    content: '\f19d';
+}
+
+header nav .github:before {
+    font-family: 'foundation-icons';
+    content: '\f1c9';
+}
+
+header nav .toys:before {
+    font-family: 'foundation-icons';
+    content: '\f15b';
+}
+
+header nav .about:before {
+    font-family: 'foundation-icons';
+    content: '\f1ee';
+}
+
+header nav .feed:before {
+    font-family: 'foundation-icons';
+    content: '\f1aa';
+}
+
+header nav .tools:before {
+    font-family: 'foundation-icons';
+    content: '\f215';
+}
+
+/* Articles */
+
+main {
+    display: block;
+    margin: 7rem auto 0 auto;
+    max-width: 700px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+main a:visited {
+    color: DarkMagenta;
+}
+
+main article > h2 a:visited {
+    /* Don't change title color. */
+    color: DarkSlateBlue;
+}
+
+main article h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0.5em 0;
+}
+
+main article h3 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main article > time {
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    color: DimGray;
+}
+
+main article > time:before {
+    font-family: 'foundation-icons';
+    content: '\f124'
+}
+
+main article p {
+    margin: 0.75em 0;
+}
+
+main article p a,
+main article li a {
+    text-decoration: underline;
+}
+
+main article h2 a {
+    text-decoration: none;
+}
+
+.post-list {
+    text-align: left;
+    padding: 0;
+    font-size: 16px;
+}
+
+.post-list a {
+    text-decoration: none;
+}
+
+main article ul li {
+    list-style-type: disc;
+    margin-left: 0.25em;
+}
+
+main article s {
+    color: DimGray;
+}
+
+main article img,
+main article video,
+main article svg,
+main article canvas {
+    display: block;
+    margin: 0.5em auto;
+    max-width: 100%;
+}
+
+main article .grid {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main article .grid img,
+main article .grid video {
+    display: inline-block;
+    margin: 0;
+}
+
+main article img.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 120px;
+}
+
+main article p code,
+main article li code {
+    font-size: 15px;
+}
+
+main article pre code {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+main article pre {
+    margin: 0 1em;
+    padding: 0.5em;
+    line-height: 1.1;
+    background: FloralWhite;
+    border: 1px dotted LightGray;
+}
+
+main article blockquote:.not(.excerpt) {
+    margin: 0 1em;
+    padding: 0 1em;
+    border: 1px dashed LightGray;
+    background-color: FloralWhite;
+}
+
+article .download {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+main article .abstract {
+    font-style: italic;
+}
+
+main article ul.tags li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0.25em;
+}
+
+main article ul.tags {
+    display: block;
+    text-align: right;
+}
+
+main article ul.tags:before {
+    content: 'tags ['
+}
+
+main article ul.tags:after {
+    content: ']'
+}
+
+main article img.right {
+    float: right;
+    margin: 12px 0 12px 12px;
+}
+
+main article img.left {
+    float: left;
+    margin: 12px 12px 12px 0;
+}
+
+.comments {
+    font-size: 90%;
+    margin: inherit 110%;
+}
+
+.comments .etiquette {
+    color: gray;
+    font-size: 85%;
+    margin-left: 5px;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+article.many:after,
+article.single nav:before {
+    display: block;
+    content: '';
+    border-bottom: 2px solid LightGray;
+    width: 75%;
+    margin: auto;
+    height: 1px;
+    margin-top: 1em;
+}
+
+article blockquote.excerpt {
+    margin: 0;
+}
+
+article .read-more,
+article .read-more a,
+article .read-more a:visited {
+    color: Gray;
+    font-size: 150%;
+    margin-top: -5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+article.many .tags {
+    margin: 0 0.1em;
+}
+
+/* Article Navigation */
+
+article nav {
+    position: relative;
+    height: 4em;
+    line-height: 4em;
+}
+
+article nav a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+article nav .prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 4em;
+    text-align: left;
+}
+
+article nav .prev a {
+    margin-left: 1.5em;
+}
+
+article nav .next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 4em;
+    text-align: right;
+}
+
+article nav .next a {
+    margin-right: 1em;
+}
+
+article nav .marker {
+    display: inline-block;
+    height: 4em;
+    line-height: 4em;
+    margin-left: 0.5em;
+}
+
+article nav .prev .marker {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+article nav .next .marker {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Footer */
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 0.75em;
+    color: Gray;
+    max-width: 450px;
+    margin: 0.5em auto 1em auto;
+}
+
+/* Post listings */
+
+article .post-list time {
+    display: inline-block;
+    color: DimGray;
+    margin-right: 0.2em;
+}
+
+article .post-list li {
+    list-style-type: none;
+}
+
+article .post-count {
+    font-weight: bold;
+}
+
+article.tag a.feed {
+    display: inline-block;
+    background-image: url(/img/feed.png);
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    background-position: 0 0;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    vertical-align: -15%;
+}
+
+/* Miscellaneous */
+
+main article .resetable {
+    cursor: pointer;
+}
+
+/* Remove/hide some elements for small screens */
+
+@media screen and (max-width: 649px) {
+    .identity {
+        visibility: hidden;
+    }
+
+    article .post-list time {
+        display: none;
+    }
+
+    article .post-list {
+        text-indent: -1.5em;
+        margin-left: 1.5em;
+    }
+
+    article {
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    article pre {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    header nav li.feed,
+    header nav li.toys {
+        display: none;
+    }
+
+    header nav ul {
+        width: 16rem;
+    }
+}
