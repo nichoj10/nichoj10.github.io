@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="/css/full.css"/>
+<div class="portrait identity"></div>
 
+<!-- 
 {% for post in site.posts limit: 10 %}
 <article class="many">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -24,4 +27,50 @@ layout: default
   </ul>
   <ol class="references print-only"></ol>
 </article>
-{% endfor %}
+{% endfor %} -->
+
+
+<!-- 
+---
+layout: default
+---
+
+<style>
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container img {
+  margin-right: 10px;
+}
+</style>
+
+{% for post in site.posts limit: 10 %}
+<article class="many">
+  <div class="container">
+    <img src="{{ post.image }}" alt="Post Image">
+    <div>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+        {{ post.date | date: "%B %d, %Y" }}
+      </time>
+      <div class="print-only url">
+        nullprogram.com{{post.url}}
+      </div>
+
+      <blockquote class="excerpt" cite="{{ post.url }}">
+        {{ post.excerpt }}
+      </blockquote>
+      <div class="read-more">[<a href="{{ post.url }}">…</a>]</div>
+
+      <ul class="tags">
+        {% for tag in post.tags %}
+        <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+      <ol class="references print-only"></ol>
+    </div>
+  </div>
+</article>
+{% endfor %} -->

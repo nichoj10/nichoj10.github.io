@@ -11,10 +11,47 @@
 
 body {
     color: Black;
-    background-color: White;
-    font-family: sans-serif;
+    background-color: rgb(246, 235, 211);
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
+
+body div.container-text {
+    width: 330px;
+}
+
+body div.container {
+    display: flex
+}
+
+body div.portrait {
+    width: 350px;
+    height: 475px;
+    border-radius: 5px;
+    background-image: url(/img/avatar.jpg);
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+body div.header-text {
+    font-family: 'Courier', monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 1;
+}
+
+body p {
+    text-align: left;
+    width: 350px;
+}
+
 
 img {
     border: 0;
@@ -33,7 +70,7 @@ header {
     left: 0;
     border-bottom: 1px solid BlanchedAlmond;
     box-shadow: 0 0 10px DarkGray;
-    background-color: Beige;
+    background-color: rgb(243, 220, 245);
 }
 
 header a {
@@ -46,17 +83,6 @@ header > div.container {
     padding: 0;
     height: 4rem;
     max-width: 700px;
-}
-
-header div.portrait {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 5px;
-    background-image: url(/img/avatar.jpg);
-    background-size: 100% 100%;
 }
 
 header .container > h1,
@@ -166,7 +192,7 @@ header nav .tools:before {
 
 main {
     display: block;
-    margin: 7rem auto 0 auto;
+    margin: 4rem auto 0 auto;
     max-width: 700px;
     line-height: 1.5;
     overflow-wrap: break-word;
