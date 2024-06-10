@@ -25,7 +25,13 @@ body div.container-text {
 }
 
 body div.container {
-    display: flex
+    display: flex;
+}
+
+body div.container-2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
 body div.portrait {
@@ -40,11 +46,25 @@ body div.portrait {
 body div.header-text {
     font-family: 'Courier', monospace;
     font-weight: bold;
-    font-style: italic;
     font-size: 50px;
     text-align: left;
     word-wrap: break-word;
     line-height: 1;
+}
+
+body div.header-text-2 {
+    font-family: 'Courier', monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 1;
+    padding-bottom:10px;
+}
+
+body div.essay {
+    padding-top:5px;
 }
 
 body p {
